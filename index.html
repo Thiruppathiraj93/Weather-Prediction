@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>☁️ Mini Weather App</h2>
+
+        <input type="text" id="city" placeholder="Enter city name">
+        <button onclick="getWeather()">Search</button>
+
+        <!-- Loading Animation -->
+        <div id="loading" class="loading hide"></div>
+
+        <div id="weatherBox" class="hide">
+            <img id="icon" width="100">
+            <h3 id="temp"></h3>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>
